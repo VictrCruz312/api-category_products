@@ -3,10 +3,10 @@ import { Client } from "pg";
 const database = new Client(
   process.env.NODE_ENV === "test"
     ? {
-        user: "",
-        host: "",
-        database: "",
-        password: "",
+        user: "victor",
+        host: "localhost",
+        database: "tests_products",
+        password: "Victor.95",
         port: 5432,
       }
     : {
