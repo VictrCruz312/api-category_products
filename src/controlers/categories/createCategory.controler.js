@@ -1,4 +1,4 @@
-import createCategoryService from "../services/createCategory.service";
+import createCategoryService from "../../services/categories/createCategory.service";
 
 const createCategoryControler = async (req, res) => {
   try {
