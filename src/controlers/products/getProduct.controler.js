@@ -1,3 +1,5 @@
+import getProductService from "../../services/products/getProduct.service";
+
 const getProductControler = async (req, res) => {
   try {
     const { id } = req.params;
