@@ -10,7 +10,7 @@ const routesProducts = Router();
 
 routesProducts.post("", createProductControler);
 routesProducts.get("", getProductsControler);
-// routesProducts.get("/:id", getProductControler);
+routesProducts.get("/:id", getProductControler);
 // routesProducts.patch("/:id", updateProductControler);
 // routesProducts.delete("/:id", deleteProductControler);
 // routesProducts.get("/category/:category_id", getProductPerCategoryControler);
