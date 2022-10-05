@@ -2,9 +2,9 @@ import createProductService from "../../services/products/createProduct.service"
 
 const createProductControler = async (req, res) => {
   try {
-    const { name, price, product_id } = req.body;
+    const { name, price, category_id } = req.body;
 
-    const product = await createProductService(name, price, product_id);
+    const product = await createProductService(name, price, category_id);
 
     return res
       .status(201)
