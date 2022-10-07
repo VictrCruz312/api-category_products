@@ -8,7 +8,7 @@ const database = new Client(
         host: "localhost",
         database: "tests_products",
         password: "Victor.95",
-        port: 5436,
+        port: 5432,
       }
     : {
         user: process.env.DB_USER,

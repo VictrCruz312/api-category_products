@@ -9,8 +9,8 @@ services:
     environment:
       - DB_USER=victor
       - DB_PASSWORD=Victor.95
-      - DB_HOST=localhost
-      - DB=tests_products
+      - DB_HOST=db
+      - DB=products_management
       - DB_PORT=5432
     depends_on:
       db:
@@ -24,9 +24,11 @@ services:
     environment:
       - POSTGRES_USER=victor
       - POSTGRES_PASSWORD=Victor.95
-      - POSTGRES_DB=tests_products
+      - POSTGRES_DB=products_management
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U victor -d tests_products"]
+      test: ["CMD-SHELL", "pg_isready -U victor -d products_management"]
       interval: 10s
       timeout: 5s
       retries: 5
+    volumes:
+      - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
