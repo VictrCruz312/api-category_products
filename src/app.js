@@ -11,7 +11,7 @@ app.use(express.json());
 app.use("/categories", routesCategory);
 app.use("/products", routesProducts);
 
-export default app.listen(3333, () => {
+export default app.listen(3000, () => {
   console.log("Server running");
 
   startDatabase();
