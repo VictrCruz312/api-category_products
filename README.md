@@ -59,6 +59,6 @@ category_products  | Server running
 category_products  | database connected
 //sua api e o db estará online
 ```
-
+# Acesse a documentação da API [neste link](https://github.com/VictrCruz312/api-category_products/wiki)
 ## A rota padrão para realizar qualquer requisição na API online localmente é:
 ### localhost:3000/
